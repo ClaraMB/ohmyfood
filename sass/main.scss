@@ -6,8 +6,8 @@
    /* box-sizing est appliqué à tous les éléments */
    }
 
-@import "Utils/variable.scss";
-@import "Utils/mixins";
+@import "Utils/_variable.scss";
+@import "Utils/_mixins";
 @media screen and (max-width: 767px) {
 
 body{
