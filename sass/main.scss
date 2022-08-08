@@ -11,7 +11,7 @@
 @media screen and (max-width: 767px) {
 
 body{
-    background: #ffffff;
+    background: red;
     font-family: 'Roboto', sans-serif;
     width: auto;
     overflow-x: hidden;
@@ -34,6 +34,7 @@ img {
     height: 13.33vw;
     background: #eaeaea;
     display: flex;
+    align-items: center;
     justify-content: center;
     color: black;
     padding: 10px;
@@ -81,6 +82,7 @@ button{
     margin-left: 19.87vw;
     margin-top: 9.33vw;
 }
+
 
 .explorer{
     margin: 20px 59px 60px 59px;
@@ -140,6 +142,9 @@ a{
     color: grey;
 }
 
+:hover .btn-function.a{
+    color: $color-primary;  
+}
 
 .btn-function{
     margin-top: 30px;
@@ -155,9 +160,9 @@ a{
     font-weight: bold;
     font-size: 18px;
     @include shadow;
-        &:hover{
-            background-color: $light-color-primary;
-        }
+    &:hover{
+        background-color: $light-color-primary;
+    }  
 }
 
 /* Partie Restaurant */
@@ -228,9 +233,10 @@ h3{
 
 .fa-regular{
     margin: 20px;
-    color: grey;
+    color: $color-primary;
     font-size:x-large;
 }
+
 
 /* Footer */
 .footer-grey{
