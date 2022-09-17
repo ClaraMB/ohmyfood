@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px)and (max-width: 1279px){
 
 /* Bloc logo*/
 .logo{
@@ -22,7 +22,7 @@
 }
 
 .top-part-menu{
-    display: block;
+    display: inline-block;
     position:absolute;
     justify-content: center;
 }
@@ -153,6 +153,19 @@ h3.title-plate{
 .img-page-menu{
     width: 100%;
     object-fit: cover;
+}
+
+.card-menu__bottom{
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h3{

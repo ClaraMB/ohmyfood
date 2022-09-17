@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/main.css">
     <title>Ohmyfood</title>
 </head>
 
 <!-- Body, Logo, Recherche Ville -->
 <body>
+    <!-- Loader -->
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+
     <header>
         <div class="logo"> 
             <img src="./images/logo/ohmyfood.png" alt="logo">
@@ -23,7 +28,6 @@
                 <form method="post" action="">
                     <input id="champs-recherche" type="text" name="Ville" placeholder="Paris, Belleville"/>
                  </form>
-            </div>
         </div>
     </header>
 
@@ -32,7 +36,7 @@
     <!-- En-tête -->
     <section class="top-part"> 
         <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <p class="intro">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <div class="anim">
             <button class="explorer">Explorer nos restaurants</button>
         </div>
@@ -41,10 +45,11 @@
      <!-- Partie Fonctionnement -->
      <section class="function-part"> 
         <h2>Fonctionnement</h2>
+        <div class="desktop-function-part">
         <div class="btn-1">
             <a href="#" class="btn-function">
                 <span class="circle">1</span>
-                <i class="icone-function fa-solid fa-mobile-screen-button"></i>
+                <i class="fa-solid fa-mobile-screen-button"></i>
                 Choisissez un restaurant
             </a>
         </div>
@@ -52,7 +57,7 @@
         <div class="btn-1">
             <a href="#" class="btn-function">
                 <span class="circle">2</span>
-                <i class="icone-function fa-solid fa-list"></i>
+                <i class="fa-solid fa-list"></i>
                 Composez votre menu
             </a>
         </div>
@@ -60,16 +65,17 @@
         <div class="btn-1">
             <a href="#" class="btn-function">
                 <span class="circle">3</span>
-                <i class="icone-function fa-solid fa-store"></i>
+                <i class="fa-solid fa-store"></i>
                 Dégustez au restaurant
             </a>
+        </div>
         </div>
     </section>
 
      <!-- Partie Restaurant -->
+     <h2>Restaurants</h2>
      <section class="restaurant-part">
-        <h2>Restaurants</h2>
-
+    <div class="desktop">
         <!-- Restaurant 1-->
         <div class="card-menu"> 
             <a class="link" href="menu_1.html">
@@ -82,7 +88,10 @@
                     <h3 class="card-menu__heading">La Palette du goût</h3>
                     <p class="card-menu__byline"> Ménilmontant</p>
                 </div>
-                <div class="card-menu__heart"><i class="fa-regular fa-heart"></i></div>
+                <div class="card-menu__heart">
+                    <i class="fa-regular fa-heart heart-empty"></i>
+                    <i class="fa-solid fa-heart heart-full"></i>
+                </div>
             </div> 
             </a>
         </div>
@@ -99,11 +108,16 @@
                     <h3 class="card-menu__heading">La Note enchantée</h3>
                     <p class="card-menu__byline"> Charonne</p>
                 </div>
-                <div class="card-menu__heart"><i class="fa-regular fa-heart"></i></div>
-            </div> 
+                <div class="card-menu__heart">
+                    <i class="fa-regular fa-heart heart-empty"></i>
+                    <i class="fa-solid fa-heart heart-full"></i>
+                </div>
+            </div>
             </a>
         </div>
+    </div>
 
+    <div class="desktop">
         <!-- Restaurant 3-->
         <div class="card-menu"> 
             <a class="link" href="menu_3.html">
@@ -115,7 +129,10 @@
                     <h3 class="card-menu__heading">A la française</h3>
                     <p class="card-menu__byline"> Cité rouge</p>
                 </div>
-                <div class="card-menu__heart"><i class="fa-regular fa-heart"></i></div>
+                <div class="card-menu__heart">
+                    <i class="fa-regular fa-heart heart-empty"></i>
+                    <i class="fa-solid fa-heart heart-full"></i>
+                </div>
             </div> 
             </a>
         </div>
@@ -131,16 +148,20 @@
                     <h3 class="card-menu__heading">Le délice des sens</h3>
                     <p class="card-menu__byline"> Folie-Méricourt</p>
                 </div>
-                <div class="card-menu__heart"><i class="fa-regular fa-heart"></i></div>
+                <div class="card-menu__heart">
+                    <i class="fa-regular fa-heart heart-empty"></i>
+                    <i class="fa-solid fa-heart heart-full"></i>
+                </div>
             </div> 
             </a>
         </div>
+    </div>
      </section>
 </main>
 
 <!-- Footer-->
 <footer class="footer-grey">
-            <h4>Ohmyfood</h3>
+            <h4>Ohmyfood</h4>
             <ul>
                 <li> <a href="#" class="propose"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> </li>
                 <li> <a href="#" class="partner"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> </li>

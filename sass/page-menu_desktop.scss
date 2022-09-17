@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (min-width: 1280px){
 
 /* Bloc logo*/
 .logo{
@@ -23,8 +23,8 @@
 
 .top-part-menu{
     display: block;
-    position:absolute;
     justify-content: center;
+    margin-bottom: -335px;
 }
 
 .title-page-menu{
@@ -143,6 +143,15 @@ h3.title-plate{
 
 /* Partie Restaurant */
 
+.menu_desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column_desktop{
+    width: 30%;
+}
+
 .card-page-menu{
     height: auto;
     display: flex;
@@ -153,6 +162,20 @@ h3.title-plate{
 .img-page-menu{
     width: 100%;
     object-fit: cover;
+    max-height: 500px;
+}
+
+.card-menu__bottom{
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h3{

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap">
-    <link rel="stylesheet" href="./css/page-menu.css">
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/main.css">
     <title>Ohmyfood</title>
 </head>
 
@@ -24,116 +24,151 @@
 <main>
     <!-- En-tête -->
     <section class="top-part-menu"> 
-        <img class ="card-menu__image img-page-menu" alt="A la française" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" > 
+        <img class ="card-menu__image img-page-menu" alt="Le délice des sens" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" > 
     </section>
 
-    <!-- Restaurant 3-->
+    <!-- Restaurant 1-->
     <section class="main-menu">
         <div class="card-page-menu"> 
-            <h1 class="title-page-menu">A la française</h1>
-            <div class="card-menu__heart"><i class="fa-regular fa-heart"></i></div>
-        </div>
-
-    <!-- ENTREES -->
-  
-        <h3 class="title-plate">ENTREES</h3>
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Tartare de thon</p>    
-            <div class="title-price">
-                <p class="subtitle"> Assaisonné au yuzu</p>
-                <span class="price">25€</span>
+            <h1 class="title-page-menu">Le délice des sens</h1>
+            <div class="card-menu__heart">
+                <i class="fa-regular fa-heart heart-empty"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
             </div>
-            </a>
         </div>
     
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Bouchée de homard croustillant</p>
-            <div class="title-price">
-                <p class="subtitle"> Et sa farandole de petits légumes</p>
-                <span class="price">35€</span>
+    <div class="menu_desktop">
+    <!-- ENTREES -->
+        <div class="column_desktop">
+             <h3 class="title-plate">ENTREES</h3>
+
+<!-- TEST -->
+        <div class="menu__global rectangle-1"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Tartare de thon</h3>
+                    <p>Assaisonné au yuzu</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">25€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
 
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Velouté de cèpes</p>
-            <div class="title-price">   
-                <p class="subtitle"> Aux truffes</p>
-                <span class="price">20€</span>
+        <div class="menu__global rectangle-2"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <p>Et sa farandole de petits légumes</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">35€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
-  
+
+        <div class="menu__global rectangle-3"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Velouté de cèpes </h3>
+                    <p>Aux truffes</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">20€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <!-- PLATS -->
-     
+     <div class="column_desktop">
         <h3 class="title-plate">PLATS</h3>
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Poulet rôti aux herbes de provence</p>
-            <div class="title-price">        
-                <p class="subtitle"> Et sa crème de truffe</p>
-                <span class="price">40€</span>
+        <div class="menu__global rectangle-1"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <p>Et sa crème de truffe</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">40€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
     
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Langoustine rôtie</p>
-            <div class="title-price">  
-                <p class="subtitle"> Et ses légumes de saison</p>
-                <span class="price">35€</span>
+        <div class="menu__global rectangle-2"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Langouste rôtie</h3>
+                    <p>Et ses légumes de saison</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">35€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
 
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Côte de boeuf angus</p>
-            <div class="title-price"> 
-                <p class="subtitle"> Et sa purée de panais</p>
-                <span class="price">44€</span>
+        <div class="menu__global rectangle-3"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Côte de boeuf Angus </h3>
+                    <p>Et sa purée de panais</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">44€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
-    
+     </div>
 
-     <!-- DESSERTS -->
-    
-        <h3 class="title-plate">DESSERTS</h3>
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Farandole de desserts</p>
-            <div class="title-price">
-                <p class="subtitle"> Du chef</p>
-                <span class="price">18€</span>
+<!-- DESSERTS -->
+<div class="column_desktop">
+    <h3 class="title-plate">DESSERTS</h3>
+        <div class="menu__global rectangle-1"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Farandole de desserts</h3>
+                    <p>Du chef</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">18€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
     
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Crème brulée</p>
-            <div class="title-price">
-                <p class="subtitle"> Revisité</p>
-                <span class="price">22€</span>
+        <div class="menu__global rectangle-2"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Crème brulée</h3>
+                    <p>Revisitée</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">22€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
 
-        <div class="btn-1-menu">
-            <a href="#" class="btn-function-menu">
-                <p class="title-plate">Tiramisu</p>
-            <div class="title-price">    
-                <p class="subtitle"> A la noisette</p>
-                <span class="price">23€</span>
+        <div class="menu__global rectangle-3"> 
+            <div class="menu__block">
+                <div class="menu__block-description">
+                    <h3>Tiramisu</h3>
+                    <p>A la noisette</p>
+                </div>
+                <div class="menu__block-right">
+                    <span class="menu__price">23€</span>
+                    <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
             </div>
-            </a>
         </div>
+    </div>
+</div>
         <button class="btn-command">Commander</button>
     </section>
 
@@ -141,7 +176,7 @@
 
 <!-- Footer-->
 <footer class="footer-grey">
-            <h4>Ohmyfood</h3>
+            <h4>Ohmyfood</h4>
             <ul>
                 <li> <a href="#" class="propose"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> </li>
                 <li> <a href="#" class="partner"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> </li>

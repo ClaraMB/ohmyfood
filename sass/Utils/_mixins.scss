@@ -1,4 +1,34 @@
 @mixin shadow{
     box-shadow: 2px 2px 10px 2px rgb(220, 217, 217);
     }
-    
+
+@mixin shadow-btn{
+    box-shadow: 2px 2px 10px 2px rgba(200, 179, 179, 0.615);
+    }
+
+@mixin shadow-plate{
+    box-shadow: 2px 2px 10px 2px rgb(220, 217, 217, 50%);
+        }
+
+
+@mixin tablet {
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+     @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:map-get($breakpoints, desktop)){
+     @content;
+    }
+}
+@mixin large {
+    @media screen and (min-width:map-get($breakpoints, large)){
+     @content;
+    }
+}
+          
+    @mixin medium-screen {
+     @media screen and (min-width: map-get($breakpoints, medium)) {
+      @content;
+    }
+}

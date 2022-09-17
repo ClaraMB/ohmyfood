@@ -1,0 +1,35 @@
+/* Footer */
+.footer-grey{
+    background-color: #353535;
+    height: auto;
+    padding-bottom: 15px;
+    position: relative;
+    top: 250px;
+    ul{
+        list-style: none;
+        padding-left: 20px;
+    }
+        a {
+            padding: 0px 0px 7px 0px;
+            display: block;
+            text-decoration: none;
+            color: white;
+    }
+}
+
+h4{
+    color:white;
+    font-family: 'Shrikhand';
+    margin: 0px 20px;
+    padding-top: 20px;
+}
+
+.fa-utensils{
+    margin-right: 10px;
+    color: white;
+}
+
+.fa-handshake-angle{
+    margin-right: 10px;
+    color: white;
+}

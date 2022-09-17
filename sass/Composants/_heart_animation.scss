@@ -1,0 +1,26 @@
+/* coeur au survol */
+.card-menu__heart{
+    position: relative;
+}
+
+.heart-empty{
+    font-size:x-large;
+    position: absolute;
+    right: 20px; top: 10px;
+    color: grey;
+}
+
+.heart-full{
+    font-size:x-large;
+    position: absolute; 
+    right: 20px; top: 10px;
+    color: transparent;
+    background-image: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    &:hover {
+       opacity: 1; 
+    }
+}
