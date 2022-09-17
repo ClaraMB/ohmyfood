@@ -94,6 +94,19 @@
     transform: rotate(0);
   }
 }
+button {
+  border: none;
+  box-shadow: -1px 3px 22px 5px rgba(0, 0, 0, 0.33);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: -1px 3px 26px 5px rgba(0, 0, 0, 0.4);
+}
+
 /* Declaration initiale */
 * {
   box-sizing: border-box;
@@ -166,17 +179,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  button {
-    border: none;
-    box-shadow: -1px 3px 22px 5px rgba(0, 0, 0, 0.33);
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
-  }
-  button:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
   }
   .explorer {
     width: auto;
@@ -327,8 +329,8 @@
   }
   .top-part-menu {
     display: block;
-    position: absolute;
     justify-content: center;
+    margin-bottom: -300px;
   }
   .title-page-menu {
     color: black;
@@ -437,6 +439,7 @@
   .img-page-menu {
     width: 100%;
     object-fit: cover;
+    max-height: 300px;
   }
   h3 {
     color: black;
@@ -755,9 +758,9 @@
     padding-bottom: 30px;
   }
   .top-part-menu {
-    display: inline-block;
-    position: absolute;
+    display: block;
     justify-content: center;
+    margin-bottom: -300px;
   }
   .title-page-menu {
     color: black;
@@ -866,6 +869,7 @@
   .img-page-menu {
     width: 100%;
     object-fit: cover;
+    max-height: 300px;
   }
   .card-menu__bottom {
     margin-left: 12px;
@@ -1207,7 +1211,7 @@
   .top-part-menu {
     display: block;
     justify-content: center;
-    margin-bottom: -335px;
+    margin-bottom: -300px;
   }
   .title-page-menu {
     color: black;

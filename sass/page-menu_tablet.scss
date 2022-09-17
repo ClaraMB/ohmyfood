@@ -22,9 +22,9 @@
 }
 
 .top-part-menu{
-    display: inline-block;
-    position:absolute;
+    display: block;
     justify-content: center;
+    margin-bottom: -300px;
 }
 
 .title-page-menu{
@@ -153,6 +153,7 @@ h3.title-plate{
 .img-page-menu{
     width: 100%;
     object-fit: cover;
+    max-height: 300px;
 }
 
 .card-menu__bottom{

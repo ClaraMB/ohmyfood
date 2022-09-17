@@ -82,18 +82,6 @@ h1{
     justify-content: center;
 }
 
-button{
-    border: none;
-    box-shadow: -1px 3px 22px 5px rgba(0,0,0,0.33);
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
-    &:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
-    }
-}
-
 .explorer{
     width: auto;
     border: 0px;

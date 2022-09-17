@@ -23,8 +23,8 @@
 
 .top-part-menu{
     display: block;
-    position:absolute;
     justify-content: center;
+    margin-bottom: -300px;
 }
 
 .title-page-menu{
@@ -153,6 +153,7 @@ h3.title-plate{
 .img-page-menu{
     width: 100%;
     object-fit: cover;
+    max-height: 300px;
 }
 
 h3{
