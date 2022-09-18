@@ -27,35 +27,6 @@
   inset: 0;
 }
 
-/* coeur au survol */
-.card-menu__heart {
-  position: relative;
-}
-
-.heart-empty {
-  font-size: x-large;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  color: grey;
-}
-
-.heart-full {
-  font-size: x-large;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 500ms ease-in-out;
-}
-.heart-full:hover {
-  opacity: 1;
-}
-
 /* Animations */
 /* Animation du loader */
 @keyframes spin {
@@ -580,6 +551,13 @@ i.fa-arrow-left {
     height: 100px;
     padding-left: 10px;
   }
+  /* coeur au survol */
+  .heart-empty {
+    right: 20px;
+  }
+  .heart-full {
+    right: 10px;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   /* Partie Restaurant */
@@ -649,6 +627,13 @@ i.fa-arrow-left {
     justify-content: space-between;
     height: 100px;
     padding-left: 10px;
+  }
+  /* coeur au survol */
+  .heart-empty {
+    right: 20px;
+  }
+  .heart-full {
+    right: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
