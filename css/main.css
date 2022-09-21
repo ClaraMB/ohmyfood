@@ -103,7 +103,7 @@ body {
 
 img {
   height: auto;
-  width: 50%;
+  width: 45%;
 }
 
 .bloc-grey {
@@ -146,7 +146,7 @@ h1 {
 
 .top-part {
   height: auto;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 h2 {
@@ -197,6 +197,7 @@ a {
 }
 
 .circle {
+  position: absolute;
   background-color: #9356DC;
   color: white;
   border-radius: 14px;
@@ -205,7 +206,7 @@ a {
   text-align: center;
   padding-top: 5px;
   font-weight: lighter;
-  margin-left: -22%;
+  left: -15px;
   font-size: smaller;
 }
 
@@ -214,10 +215,15 @@ a {
   color: grey;
 }
 
+.fa-function {
+  position: absolute;
+  left: 30px;
+}
+
 .btn-function {
   margin-top: 30px;
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   height: 64px;
   width: 80%;
@@ -235,6 +241,11 @@ a {
 
 .btn-function:hover i {
   color: #9356DC;
+}
+
+.text {
+  position: absolute;
+  left: 65px;
 }
 
 /* Partie Restaurant */
@@ -337,6 +348,11 @@ h3 {
   position: relative;
   top: 250px;
   padding-bottom: 30px;
+}
+
+img {
+  height: auto;
+  width: 30%;
 }
 
 .top-part-menu {
@@ -518,7 +534,8 @@ i.fa-arrow-left {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   /* Partie Fonctionnement */
   .circle {
-    margin-left: -28%;
+    margin-left: -31px;
+    left: 18px;
   }
   .fa-solid {
     margin-right: 10px;
@@ -586,9 +603,6 @@ i.fa-arrow-left {
   .btn-1 {
     width: 80%;
   }
-  .circle {
-    margin-left: -23%;
-  }
   .fa-solid {
     margin-right: 10px;
   }
@@ -603,6 +617,7 @@ i.fa-arrow-left {
   }
   .card-menu {
     width: 50%;
+    position: relative;
   }
   .card-menu .card-menu__top {
     justify-content: flex-end;
@@ -618,7 +633,7 @@ i.fa-arrow-left {
     padding: 10px;
     color: #32b091;
     position: absolute;
-    margin-right: 20px;
+    margin-right: -55px;
     margin-top: 10px;
   }
   .card-menu__bottom {
